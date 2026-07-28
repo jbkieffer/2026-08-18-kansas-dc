@@ -88,29 +88,30 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
 {% endunless %}
 {% endif %}
 
-
-{% comment %}
-EVENTBRITE
-
-This block includes the Eventbrite registration widget if
-'eventbrite' has been set in the header.  You can delete it if you
-are not using Eventbrite, or leave it in, since it will not be
-displayed if the 'eventbrite' field in the header is not set.
-{% endcomment %}
-
-{% if page.eventbrite %}
-<strong>Some adblockers block the registration window. If you do not see the registration box below, please check your adblocker settings.</strong>
-<div id="eventbrite-widget-container"></div>
-<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-<script type="text/javascript">
-    window.EBWidgets.createWidget({
-        // Required
-        widgetType: 'checkout',
-        eventId: {{page.eventbrite}},
-        iframeContainerId: 'eventbrite-widget-container',
-    });
-</script>
-{% endif %}
+<div class="card mb-2">
+  <h5 class="card-header">Registration</h5>
+  <div class="card-body">
+    <p>This is a <strong>in-person, multi-site</strong> workshop taking place at The University of Kansas (KU) and Kansas State University (K-State). The workshop will not be recorded. Registration is free and required.</p>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">University of Kansas</h5>
+            <p>To attend the workshop on <strong>KU's Lawrence campus</strong>, <a href="https://lib.ku.edu/data-carpentry" target="_blank">register through KU Libraries' Data Carpentry Workshops webpage.</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Kansas State University</h5>
+            <p>To attend the workshop on <strong>K-State's Manhattan campus</strong>, <a href="https://cal.lib.k-state.edu/calendar/workshops" target="_blank">register through K-State Libraries' workshops calendar.</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 {% comment %}
