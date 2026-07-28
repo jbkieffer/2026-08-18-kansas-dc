@@ -227,15 +227,12 @@ address.
         <dt class="col-sm-2 col-md-2 py-2 px-3 bg-body-light text-body-secondary fw-bold">Where</dt>
         <dd class="col py-2 px-3 mx-0 mb-0">
             {% if page.latitude and page.longitude and online == "false" %}    
-                {{page.address}}.
-                Get directions with
-                <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
-                or
-                <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
-                {% if page.what3words %}
-                    What3Words location:
-                    <a href="https://what3words.com/{{page.what3words}}">///{{page.what3words}}</a>.
-                {%endif %}
+                <p id="where">
+                  This is a mulit-site, in-person training taking place simultaneously on KU Lawrence and K-State Manhattan campuses.
+                  <strong>Learners registered to attend in-person on the KU Lawrence campus:</strong> Watson Library (Room 455), 1425 Jayhawk Boulevard, Lawrence, KS. Get directions with <a href="//www.openstreetmap.org/?mlat=38.956574&mlon=-95.244782&zoom=16">OpenStreetMap</a> or <a href="//maps.google.com/maps?q=38.956574,-95.244782">Google Maps</a>.
+                  <strong>Learners registered to attend in-person on the K-State Manhattan campus:</strong> Hale Library (Room 407), 1117 Mid-Campus Drive North, Manhattan, KS 66506. Get directions with <a href="//www.openstreetmap.org/?mlat=39.19059394093958&mlon=-96.58055800335323&zoom=16">OpenStreetMap</a> or <a href="//maps.google.com/maps?q=39.19059394093958,-96.58055800335323">Google Maps</a>.
+                </p>
+  
                 {% elsif online == "true_public" %}
                     <p id="where">
                         Online at <a href="{{page.address}}">{{page.address}}</a>.
