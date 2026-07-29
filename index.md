@@ -274,7 +274,7 @@ address.
             <p id="requirements">
             {% if online == "false" %}
                 Participants must bring a laptop with a
-                Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+                Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.).
             {% else %}
                 Participants must have access to a computer with a
                 Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
@@ -547,6 +547,44 @@ please preview your site before committing, and make sure to run
 
 <h2 id="setup">Setup</h2>
 <p>
+  To participate in this Data Carpentry Genomics workshop, you will need a spreadsheet program such as Microsoft Excel installed on your computer. You will also need access to an up-to-date web browser. We will access the Unix Shell and workshop data through remote computing instances.
+</p>
+ <h3>Spreadsheet Software</h3>
+ 
+  <p>
+    If you don't have a spreadsheet program already, 
+    you can use <a href="https://www.libreoffice.org" target="_blank">Libre Office</a>, a free, open source spreadsheet program.
+
+  </p>
+  <h4>Windows</h4>
+  <p>
+    <ul>
+      <li><strong>Download the Installer:</strong>
+        Install LibreOffice by going to the 
+        <a href="https://www.libreoffice.org/download/libreoffice-fresh/" target="_blank">installation page</a>.
+        The version for Windows should automatically be selected. 
+        Click <strong>Download</strong>. 
+        You will go to a page that asks about a donation, but you don't need to make one. 
+  <h4>Mac OS</h4>
+    <ul>
+      <li><strong>Download the Installer:</strong>
+        Install LibreOffice by going to the 
+        <a href="https://www.libreoffice.org/download/libreoffice-fresh/" target="_blank">installation page</a>.
+        The version for Mac OS should automatically be selected. 
+        Click <strong>Download</strong>. 
+        You will go to a page that asks about a donation, but you don't need to make one. 
+  <h4>Linux</h4>
+    <ul>
+      <li><strong>Download the Installer:</strong>
+        Install LibreOffice by going to the 
+        <a href="https://www.libreoffice.org/download/libreoffice-fresh/" target="_blank">installation page</a>.
+        The version for Linux should automatically be selected. 
+        Click <strong>Download</strong>. 
+        You will go to a page that asks about a donation, but you don't need to make one. 
+  </p>
+
+{% comment %}
+<p>
   To participate in a
   {% if site.carpentry == "swc" %}
   Software Carpentry
@@ -560,11 +598,12 @@ please preview your site before committing, and make sure to run
   workshop, you will need access to software as described below.
   In addition, you will need an up-to-date web browser.
 </p>
+
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors that may be useful on the
   <a href="{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
-
+{% endcomment %}
 
 {% comment %}
 For online workshops, the section below provides:
