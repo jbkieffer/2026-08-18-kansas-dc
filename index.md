@@ -11,8 +11,8 @@ humandate: "August 18–19, 2026"    # human-readable dates for the workshop (e.
 humantime: "9:00 am - 4:30 pm CDT"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2026-08-18      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2026-08-19        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Vanna Hay (KU)", "Caroline Kisielinsk (KU)"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Jamene Brooks-Kieffer (KU)", "E Durham (KU)", "Teresa Shippy (K-State)", "Gwien Sibley (K-State)", "Will Tank (K-State)"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Vanna Hay (KU)", "Caroline Kisielinski, PhD (KU)"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Jamene Brooks-Kieffer (KU)", "E Durham (KU)", "Teresa Shippy, PhD (K-State)", "Gwendolyn Sibley (K-State)", "Will Tank, PhD (K-State)"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["emdurham@ku.edu","grsibley@ksu.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 # Optional variables
 collaborative_notes: https://pad.carpentries.org/2026-08-18-kansas-dc-genomics  # URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
@@ -97,7 +97,7 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
         <div class="card text-center">
           <div class="card-body">
             <h5 class="card-title">University of Kansas</h5>
-            <p>To attend the workshop on <strong>KU's Lawrence campus</strong>, <a href="https://lib.ku.edu/data-carpentry" target="_blank">register through KU Libraries' Data Carpentry Workshops webpage.</a></p>
+            <p>To attend the workshop on <strong>KU's Lawrence campus</strong>, <a href="https://ku.libwizard.com/f/2026-08-18-kansas-dc" target="_blank">register through KU Libraries' Data Carpentry Workshop registration form.</a></p>
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
         <div class="card text-center">
           <div class="card-body">
             <h5 class="card-title">Kansas State University</h5>
-            <p>To attend the workshop on <strong>K-State's Manhattan campus</strong>, <a href="https://cal.lib.k-state.edu/calendar/workshops" target="_blank">register through K-State Libraries' workshops calendar.</a></p>
+            <p>To attend the workshop on <strong>K-State's Manhattan campus</strong>, <a href="https://cal.lib.k-state.edu/event/17280057" target="_blank">register through K-State Libraries' workshops calendar.</a></p>
           </div>
         </div>
       </div>
@@ -420,7 +420,7 @@ Note we also have a CodiMD (the open-source version of HackMD) available at http
 {% if page.collaborative_notes %}
 <h2 id="collaborative_notes">Collaborative Notes</h2>
 <p>
-We will use this <a href="{{ page.collaborative_notes }}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+We will use this <a href="{{ page.collaborative_notes }}" target="_blank">collaborative document</a>, called an Etherpad, for chatting, taking notes, and sharing URLs and bits of code.
 </p>
 {% endif %}
 
