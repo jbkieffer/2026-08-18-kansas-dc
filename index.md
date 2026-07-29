@@ -547,41 +547,40 @@ please preview your site before committing, and make sure to run
 
 <h2 id="setup">Setup</h2>
 <p>
-  To participate in this Data Carpentry Genomics workshop, you will need a spreadsheet program such as Microsoft Excel installed on your computer. You will also need access to an up-to-date web browser. We will access the Unix Shell and workshop data through remote computing instances.
+To participate in this Data Carpentry Genomics workshop, you will need a spreadsheet program such as Microsoft Excel installed on your computer. You will also need access to an up-to-date web browser. We will access the Unix Shell and workshop data through remote computing instances.
 </p>
- <h3>Spreadsheet Software</h3>
- 
-  <p>
-    If you don't have a spreadsheet program already, 
-    you can use <a href="https://www.libreoffice.org" target="_blank">Libre Office</a>, a free, open source spreadsheet program.
 
-  </p>
-  <h4>Windows</h4>
-  <p>
-    <ul>
-      <li><strong>Download the Installer:</strong>
-        Install LibreOffice by going to the 
-        <a href="https://www.libreoffice.org/download/libreoffice-fresh/" target="_blank">installation page</a>.
-        The version for Windows should automatically be selected. 
-        Click <strong>Download</strong>. 
-        You will go to a page that asks about a donation, but you don't need to make one. 
-  <h4>Mac OS</h4>
-    <ul>
-      <li><strong>Download the Installer:</strong>
-        Install LibreOffice by going to the 
-        <a href="https://www.libreoffice.org/download/libreoffice-fresh/" target="_blank">installation page</a>.
-        The version for Mac OS should automatically be selected. 
-        Click <strong>Download</strong>. 
-        You will go to a page that asks about a donation, but you don't need to make one. 
-  <h4>Linux</h4>
-    <ul>
-      <li><strong>Download the Installer:</strong>
-        Install LibreOffice by going to the 
-        <a href="https://www.libreoffice.org/download/libreoffice-fresh/" target="_blank">installation page</a>.
-        The version for Linux should automatically be selected. 
-        Click <strong>Download</strong>. 
-        You will go to a page that asks about a donation, but you don't need to make one. 
-  </p>
+<h3>Spreadsheet Software</h3>
+<p>
+If you don't have a spreadsheet program already, you can use <a href="https://www.libreoffice.org" target="_blank">Libre Office</a>, a free, open source spreadsheet program.
+</p>
+
+<h4>Windows</h4>
+<p>
+  <strong>Download the Installer:</strong>
+  Install LibreOffice by going to the
+  <a href="https://www.libreoffice.org/download/libreoffice-fresh/" target="_blank">installation page</a>.
+  The version for Windows should automatically be selected.
+  Click <strong>Download</strong>.You will go to a page that asks about a donation, but you don't need to make one.
+</p>
+<h4>Mac OS</h4>
+<p>
+  <strong>Download the Installer:</strong>
+  Install LibreOffice by going to the 
+  <a href="https://www.libreoffice.org/download/libreoffice-fresh/" target="_blank">installation page</a>.
+  The version for Mac OS should automatically be selected. 
+  Click <strong>Download</strong>. 
+  You will go to a page that asks about a donation, but you don't need to make one.
+</p>
+<h4>Linux</h4>
+<p>
+  <strong>Download the Installer:</strong>
+  Install LibreOffice by going to the 
+  <a href="https://www.libreoffice.org/download/libreoffice-fresh/" target="_blank">installation page</a>.
+  The version for Linux should automatically be selected. 
+  Click <strong>Download</strong>. 
+  You will go to a page that asks about a donation, but you don't need to make one. 
+</p>
 
 {% comment %}
 <p>
@@ -622,9 +621,11 @@ If you do not use Zoom for your online workshop, edit the file `_includes/instal
 These are the installation instructions for the tools used during the workshop.
 {% endcomment %}
 
-{% assign setup_file = site.carpentry | append: '/setup.html' %}
-{% if isOfficial %}
-  {% include {{ setup_file }} %}
-{% elsif site.carpentry == "incubator" %}
-  Please check the "Setup" page of <a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for instructions to follow to obtain the software and data you will need to follow the lesson.
-{% endif %}
+{% comment %}
+  {% assign setup_file = site.carpentry | append: '/setup.html' %}
+  {% if isOfficial %}
+    {% include {{ setup_file }} %}
+  {% elsif site.carpentry == "incubator" %}
+    Please check the "Setup" page of <a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for instructions to follow to obtain the software and data you will need to follow the lesson.
+  {% endif %}
+{% endcomment %}
